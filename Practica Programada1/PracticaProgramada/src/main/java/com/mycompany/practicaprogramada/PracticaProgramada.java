@@ -19,7 +19,7 @@ public class PracticaProgramada {
 
         lectura = JOptionPane.showInputDialog("Digite un numero a evaluar ");
         System.out.println("Ud ha digitado " + lectura);
-
+//Que pasa si alguien pone algo que no es numero?, try and catch no lo hemos visto
         try {
             numero = Integer.parseInt(lectura);
 
@@ -28,6 +28,8 @@ public class PracticaProgramada {
         }
         // Por qué debo de definir otra vez numero como un integer si ya lo hice arriba?
         numero = Integer.parseInt(lectura);
+        
+        //Intente varias formas pero parece que esta estructura funciona. Pedirle al profe clarificar como deberia interpretarse la logica abajo.
         if (numero % 2 == 0) {
             if (numero > 0) {
                 JOptionPane.showMessageDialog(null, "El siguiente numero es par y positivo: " + numero);
