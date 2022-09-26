@@ -14,6 +14,8 @@ import javax.swing.JOptionPane;
 public class PracticaProgramada {
 
     public static void main(String[] args) {
+        
+        /*
                 String lectura;
         int numero;
 
@@ -44,6 +46,22 @@ public class PracticaProgramada {
             if (numero < 0) {
                 JOptionPane.showMessageDialog(null, "El siguiente numero es Impar y negativo: " + numero);
             }
-        }
+        }*/
+    /*
+        
+   
+        String ingresado= JOptionPane.showInputDialog("Ingrese una letra").toUpperCase();
+        
+switch(ingresado){
+case "Q", "u", "O", "S", "C" -> JOptionPane.showMessageDialog
+        (null,"La letra ingresada es redonda");
+case "W", "T", "Y", "I", "E", "A", "F", "H", "K", "L", "Z", "X", "N", "M" -> JOptionPane.showMessageDialog
+        (null,"La letra ingresada es recta");
+case "R", "P", "D", "G", "J", "Ñ", "B" -> JOptionPane.showMessageDialog
+        (null,"La letra ingresada es mixta");
+default -> JOptionPane.showMessageDialog(null,"Lo ingresado no es una letra");
+}
+    */
     }
+    
 }

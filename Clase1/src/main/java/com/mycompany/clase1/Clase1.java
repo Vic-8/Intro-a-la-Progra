@@ -99,35 +99,7 @@ else {
         System.out.println("Nombre es "+nombre);
   
          */
-        String lectura;
-        int numero;
 
-        lectura = JOptionPane.showInputDialog("Digite un numero a evaluar ");
-        System.out.println("Ud ha digitado " + lectura);
-
-        try {
-            numero = Integer.parseInt(lectura);
-
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Debe de digitar un numero");
-        }
-        // Por qué debo de definir otra vez numero como un integer si ya lo hice arriba?
-        numero = Integer.parseInt(lectura);
-        if (numero % 2 == 0) {
-            if (numero > 0) {
-                JOptionPane.showMessageDialog(null, "El siguiente numero es par y positivo: " + numero);
-            }
-            if (numero < 0) {
-                JOptionPane.showMessageDialog(null, "El siguiente numero es par y negativo: " + numero);
-            }
-        } else if (numero % 2 != 0) {
-            if (numero > 0) {
-                JOptionPane.showMessageDialog(null, "El siguiente numero es Impar y positivo: " + numero);
-            }
-            if (numero < 0) {
-                JOptionPane.showMessageDialog(null, "El siguiente numero es Impar y negativo: " + numero);
-            }
-        }
     }
 
 }
