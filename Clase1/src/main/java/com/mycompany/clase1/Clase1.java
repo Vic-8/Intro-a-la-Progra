@@ -11,28 +11,7 @@ public class Clase1 {
 
     public static void main(String[] args) {
 
-        /**
-         *
-         * @author victo
-         *
-         * public class Clase1 {
-         *
-         * public static void main(String[] args) { System.out.println("Hello
-         * World!"); JOptionPane.showMessageDialog(null,"Hello World");
-         *
-         * }
-         * }
-         * //
-         *
-         * /*
-         * /*
-         *
-         */
-        /*
-public class Clase1 {
-    
-    public static void main(String[] args) {
-
+/*
 int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Edad"));
 if (edad>=18){
             JOptionPane.showMessageDialog(null,"Puede Votar");
@@ -40,7 +19,7 @@ if (edad>=18){
 else {
             JOptionPane.showMessageDialog(null,"No Puede Votar");
 }
-}}
+*/
 /*
          */
         //Practica if
