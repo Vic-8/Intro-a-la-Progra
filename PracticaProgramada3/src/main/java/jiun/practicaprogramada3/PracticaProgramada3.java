@@ -58,7 +58,6 @@ double Porcentaje=0;
 
 int contador=0;
 int suma=0;
-double promedio=0;
 int menos100=0;
 int e100a120=0;
 int e121a130=0;
