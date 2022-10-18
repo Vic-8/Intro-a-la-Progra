@@ -82,19 +82,14 @@ public class Menu {
         }
     }
 
-    private void Alonso() {
+    public void Alonso() {
 
         Cuenta cuenta1 = new Cuenta ();
         cuenta1.cuenta1();
-        System.out.println("El saldo es "+cuenta1.saldoActual+"\nNodeCuenta es: "+cuenta1.nodeCuenta);
+        JOptionPane.showMessageDialog(null,"Titular de Cuenta es: "+cuenta1.nombre+"n/El saldo es "+cuenta1.saldoActual+
+                "\nNumero de Cuenta es: "+cuenta1.nodeCuenta+"\nID de Alonso es: "+cuenta1.iD+
+                "\nTasa de Interes en la cuenta es de: "+cuenta1.interes+"%");
         
-        imprimirMenu2();
-        int eleccion = getInput();
-        tomarAccion2(eleccion);
- 
-    }
-    
-    private void imprimirMenu2() {
         JOptionPane.showMessageDialog(null, """
                                             Por favor seleccione accion a tomar: 
                                              1) Retirar
@@ -102,10 +97,8 @@ public class Menu {
                                              3) Monto de interes del mes actual
                                              4) Saldo Actual
                                              0) Salir""");
+int eleccion = getInput();
 
-    }
-
-    public void tomarAccion2(int eleccion) {
         switch (eleccion){
         
             case 0:
@@ -113,22 +106,36 @@ public class Menu {
                 System.exit(0);
                 break;
             case 1:
-                JOptionPane.showMessageDialog(null, "TESTING");
+                int cantidad = Integer.parseInt(JOptionPane.showInputDialog("Digite un monto a retirar: "));
+                        if (cantidad <= cuenta1.saldoActual) {
+            cuenta1.saldoActual = cuenta1.saldoActual - cantidad;
+            JOptionPane.showMessageDialog(null, "Ud ha retirado: " + cantidad + "\nSu saldo actual es de: " + cuenta1.saldoActual);
+        } else {
+            System.out.println("No tiene suficiente balance para retirar");
+        };
                 break;
             case 2:
-              //  Fernando();
+                
+           cantidad = Integer.parseInt(JOptionPane.showInputDialog("Digite un monto a depositar: "));
+              if (cantidad <= 0) {
+                  JOptionPane.showMessageDialog(null, "Ud no puede depositar numeros negativos o cero");
+        } else {
+            cuenta1.saldoActual = cuenta1.saldoActual + cantidad;
+            JOptionPane.showMessageDialog(null, "Ud ha depositado: " + cantidad + "\nSu saldo actual es de: " + cuenta1.saldoActual);
                 break;
+              }
             case 3:
-              //  hacerRetiro();
+                double intereses;
+                intereses = cuenta1.saldoActual*0.02;
+                JOptionPane.showMessageDialog(null,"Intereses ganados hasta la fecha son: "+intereses);
                 break;
             case 4:
-               // saldoActual();
+               JOptionPane.showMessageDialog(null,"El Saldo de la Cuenta es: "+cuenta1.saldoActual);
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "Error");
         
                 
         }
-    }
-   
-}
+    }}
+    
