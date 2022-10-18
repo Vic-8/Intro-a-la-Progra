@@ -17,9 +17,10 @@ public class Cuenta {
     public int iD;
     public double interes = 0.02;
     String nombre;
-    public static double numerodeCuentas = 0;
+   // public static double numerodeCuentas = 0;
 
     // Balance en cero
+    /*
     public void crearCuenta() {
 
         iD = Integer.parseInt(JOptionPane.showInputDialog("Digite ID de cliente: "));
@@ -28,7 +29,7 @@ public class Cuenta {
         saldoActual = Double.parseDouble(JOptionPane.showInputDialog("Digite abono a cuenta inicial: "));
 
     }
-
+*/
     //Cuenta1
     
     public void cuenta1(){
@@ -52,7 +53,7 @@ public class Cuenta {
     }
     
     
-    
+    /*
     // Deposito
     public void deposito(double cantidad) {
         
@@ -87,5 +88,5 @@ public class Cuenta {
         return saldoActual;
 
     }
-
+*/
 }
