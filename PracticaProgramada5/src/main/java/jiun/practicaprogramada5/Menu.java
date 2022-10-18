@@ -131,6 +131,7 @@ int eleccion = getInput();
         }
     }
 
+    
 public void Fernando(){
 
         Cuenta cuenta2 = new Cuenta ();
