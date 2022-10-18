@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
  *
  * @author victo
  */
+//https://www.youtube.com/watch?v=eR3sIf41xeI
+
 public class PracticaProgramada5 {
 
     public static void main(String[] args) {
@@ -20,14 +22,5 @@ public class PracticaProgramada5 {
         menu.correrMenu();
         
         //Crear cuenta 1
-        
-        Cuenta cuenta1 = new Cuenta();
-        
-        cuenta1.crearCuenta();
-
-        System.out.println(cuenta1.saldoActual);
- 
-        
-        
-    }
+        }
 }
