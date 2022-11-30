@@ -10,4 +10,19 @@ package ejerciciopractico7;
  */
 public class Productos {
     
+   public int codigo;
+   public String descripcion;
+   public int cantidad;
+   public double precio;
+
+    public Productos(int codigo, String descripcion, int cantidad, double precio) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+   
+
+   
+    
 }
